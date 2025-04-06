@@ -8,7 +8,7 @@
  */
 const findTheDifference = function (s, t) {
   // Convert string s into an array of characters and iterate over each character
-  s.split("").map((char) => {
+  s.split("").forEach((char) => {
     // Find the position of the character in string t
     const charPos = t.indexOf(char);
     // If the character exists in t, remove it from t
@@ -31,7 +31,7 @@ const findTheDifference = function (s, t) {
 const findTheDifference2 = function (s, t) {
   // Create a frequency map of characters in s
   const charMap = {};
-  s.split("").map((char) => {
+  s.split("").forEach((char) => {
     if (charMap[char]) {
       charMap[char]++;
     } else {
@@ -39,7 +39,7 @@ const findTheDifference2 = function (s, t) {
     }
   });
   // Iterate over each character in t and remove it from the map if it exists
-  t.split("").map((char) => {
+  t.split("").forEach((char) => {
     if (charMap[char]) {
       charMap[char]--;
     }
