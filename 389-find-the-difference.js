@@ -61,7 +61,7 @@ const findTheDifference2 = function (s, t) {
  * @param {string} t - Second string with one extra character
  * @return {string} - The extra character
  */
-const findTheDifference = function(s, t) {
+const findTheDifference3 = function(s, t) {
   // Create a map to track character frequencies
   const charMap = {};
   
