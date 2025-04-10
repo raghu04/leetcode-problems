@@ -52,3 +52,31 @@ const findTheDifference2 = function (s, t) {
   }
   return null;
 };
+
+/**
+ * Finds the extra character in string t that doesn't appear in string s.
+ * Uses a character frequency map approach for O(n) time complexity.
+ * 
+ * @param {string} s - First string
+ * @param {string} t - Second string with one extra character
+ * @return {string} - The extra character
+ */
+const findTheDifference = function(s, t) {
+  // Create a map to track character frequencies
+  const charMap = {};
+  
+  // Count characters in string s
+  for (const char of s) {
+    charMap[char] = (charMap[char] || 0) + 1;
+  }
+  
+  // Decrement counts for characters in string t
+  for (const char of t) {
+    if (!charMap[char] || charMap[char] === 0) {
+      return char; // Found the extra character
+    }
+    charMap[char]--;
+  }
+  
+  return '';
+};
