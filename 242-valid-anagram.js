@@ -7,10 +7,6 @@ var isAnagram = function(s, t) {
     return sortedS === sortedT;
 };
 
-// Example usage
-console.log(isAnagram("anagram", "nagaram")); // true
-console.log(isAnagram("rat", "car"));         // false
-
 var isAnagram = function(s, t) {
     if (s.length !== t.length) return false;
 
