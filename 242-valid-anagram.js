@@ -7,7 +7,7 @@ var isAnagram = function(s, t) {
     return sortedS === sortedT;
 };
 
-var isAnagram = function(s, t) {
+var isAnagram2 = function(s, t) {
     if (s.length !== t.length) return false;
 
     const count = {};
