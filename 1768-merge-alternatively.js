@@ -12,4 +12,4 @@ var mergeAlternately = function(word1, word2) {
 };
 
 // Example
-console.log(mergeAlternately("abc", "pqr"));   // Output: "apbqcr"
+
