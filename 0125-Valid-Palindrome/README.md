@@ -120,7 +120,6 @@ Can you see why the inner `while` loops don’t make this O(n²)? Think about ho
 |----------|----------|----------|
 | Your solution   | O(n)   | O(n)   |
 | Optimized (skip in-place)   | O(n)   | O(1)   | 
-|  
 
 Both are acceptable in interviews. The O(1)‑space version signals deeper mastery.
 
