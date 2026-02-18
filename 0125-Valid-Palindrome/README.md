@@ -4,7 +4,7 @@ Difficulty: Easy | Pattern: Opposite‑direction two pointers
 
 **The problem**
 
-> Given a string s, return true if it is a palindrome, considering only alphanumeric characters and ignoring case.
+> Given a string `s`, return `true` if it is a palindrome, considering only alphanumeric characters and ignoring case.
 
 ```
 Input:  "A man, a plan, a canal: Panama"
@@ -61,8 +61,8 @@ function isPalindrome(s) {
 ```
 Two hints to keep in mind
 
-- JavaScript’s .replace() with a regex can clean a string in one line. Do you know how to write a regex that matches non‑alphanumeric characters?
-- For the pointer loop, think while not for — why might that be more natural here?
+- JavaScript’s `.replace()` with a regex can clean a string in one line. Do you know how to write a regex that matches non‑alphanumeric characters?
+- For the pointer loop, think `while` not `for` — why might that be more natural here?
 
 Give it a shot — even a partial attempt is great. I’ll guide you from wherever you get stuck. 🚀
 
@@ -74,11 +74,11 @@ Correctness: ✅ Perfect
 
 Time Complexity — what do you think it is?
 
-You do two passes over the string — one for .replace(), one for the while loop. Each pass is O(n). So combined, the overall time is O(n).
+You do two passes over the string — one for `.replace()`, one for the `while` loop. Each pass is O(n). So combined, the overall time is O(n).
 
 Space Complexity — here's a thinking question:
 
-You created a new variable str to hold the cleaned string. If the original string s has n characters, that new string costs O(n) space. There is a way to avoid creating it entirely.
+You created a new variable `str` to hold the cleaned string. If the original string `s` has `n` characters, that new string costs O(n) space. There is a way to avoid creating it entirely.
 
 ---
 🔍 One Small Optimization Worth Knowing
@@ -110,7 +110,7 @@ function isAlphanumeric(c) {
 
 Why does this matter? Your original solution is O(n) time / O(n) space. This version is O(n) time / O(1) space — no new string is created. In an interview, if an interviewer says “can you optimize space?” — this is your answer.
 
-Can you see why the inner while loops don’t make this O(n²)? Think about how many total times left and right each move across the entire string. Take a guess!
+Can you see why the inner `while` loops don’t make this O(n²)? Think about how many total times `left` and `right` each move across the entire string. Take a guess!
 
 ---
 
@@ -127,7 +127,7 @@ Both are acceptable in interviews. The O(1)‑space version signals deeper maste
 ---
 🔖 Revision Summary — Two Pointers Core Pattern
 
-- Opposite pointers start at 0 and n‑1, move inward with left < right as the stop condition.
-- Use while over for when pointer movement isn’t uniform.
+- Opposite pointers start at `0` and `n‑1`, move inward with `left < right` as the stop condition.
+- Use `while` over `for` when pointer movement isn’t uniform.
 - Cleaning input first is valid; skipping in‑place is the space‑optimal alternative.
 - Every character is visited at most once → O(n) time.
