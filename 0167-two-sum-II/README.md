@@ -136,8 +136,4 @@ Each comparison eliminates one possibility. No backtracking needed.
 
 **Interview tip:** If you see "sorted array" + "find pair/sum" — your brain should immediately think: *"Can I use two pointers?"*
 
----
 
-You're crushing it! Ready for the final challenge of the day? This one is a classic FAANG medium-hard problem that tests whether you can apply two pointers with a **greedy optimization twist**. 💪
-
----
