@@ -1,4 +1,4 @@
-## 🔴 Problem 3 — Container With Most Water
+# Container With Most Water
 **Difficulty: Medium-Hard | Pattern: Two pointers + greedy decision-making**
 
 > You are given an integer array `height` of length `n`. There are `n` vertical lines, where line `i` is drawn at position `i` with height `height[i]`.
